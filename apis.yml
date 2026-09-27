@@ -1,34 +1,67 @@
 aid: barksocial
+
 name: Barksocial
-description: 'Barksocial operates a dog‑friendly bar and community space offering memberships, day‑care, grooming, boarding, and a full‑service restaurant. Located in Baltimore and Columbia, it provides a social hub for dog owners to connect, host events, and enjoy amenities for both pets and people. The brand emphasizes a safe, dog‑centric environment with park rules, events, and a loyalty program.'
+
+image: http://barksocial.com/cdn/shop/files/IMG_5104_2_99b66d36-68ed-444c-b0bc-ec090bb42180.webp?v=1757087713
+
+description: Barksocial operates a dog‑friendly bar and community space offering memberships, day‑care, grooming, boarding, and a full‑service
+  restaurant. Located in Baltimore and Columbia, it provides a social hub for dog owners to connect, host events, and enjoy amenities for both
+  pets and people. The brand emphasizes a safe, dog‑centric environment with park rules, events, and a loyalty program.
+
 url: https://raw.githubusercontent.com/api-evangelist/barksocial/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
 - Dog
 - Bar
 - Community
 - Membership
-apis:
-- name: Barksocial API
-  description: "API for Barksocial platform (dog‑friendly bar and community)."
-  humanURL: https://barksocial.com
-  # baseURL unknown
-  # OpenAPI pointer omitted as no spec found
 
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/barksocial-llms.txt
+- type: WellKnown
+  url: well-known/barksocial-well-known.yml
+- type: Hosts
+  url: hosts/barksocial-hosts.yml
+- type: Vendors
+  url: vendors/barksocial-vendors.yml
+- type: Newsroom
+  url: https://barksocial.com/blogs/press
+- type: Login
+  url: https://www.barksocial.com/login
 - type: DomainSecurity
   url: security/barksocial-domain-security.yml
 - type: Website
   url: https://barksocial.com
+
+apis:
+- name: Barksocial API
+  description: API for Barksocial platform (dog‑friendly bar and community).
+  humanURL: https://barksocial.com
+  aid: barksocial:barksocial-api
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
