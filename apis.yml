@@ -1,7 +1,6 @@
 aid: barksocial
 name: Barksocial
-description: 'Barksocial is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Barksocial operates a dog‑friendly bar and community space offering memberships, day‑care, grooming, boarding, and a full‑service restaurant. Located in Baltimore and Columbia, it provides a social hub for dog owners to connect, host events, and enjoy amenities for both pets and people. The brand emphasizes a safe, dog‑centric environment with park rules, events, and a loyalty program.'
 url: https://raw.githubusercontent.com/api-evangelist/barksocial/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,12 +11,24 @@ created: '2026-09-27'
 modified: '2026-09-27'
 tags:
 - Company
-apis: []
+- Dog
+- Bar
+- Community
+- Membership
+apis:
+- name: Barksocial API
+  description: "API for Barksocial platform (dog‑friendly bar and community)."
+  humanURL: https://barksocial.com
+  # baseURL unknown
+  # OpenAPI pointer omitted as no spec found
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/barksocial-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/barksocial
+  url: https://barksocial.com
